@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root to: "jobs#index"
+  root to: "jobs#premium"
   
-  resources :cars
+
   resources :jobs
   get 'hello/world'
 

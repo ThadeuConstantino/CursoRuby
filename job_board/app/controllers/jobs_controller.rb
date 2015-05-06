@@ -37,6 +37,10 @@ class JobsController < ApplicationController
     end
   end
 
+  def premium
+    @jobs = Job.where(premium: true).all
+  end
+
   # PATCH/PUT /jobs/1
   # PATCH/PUT /jobs/1.json
   def update
